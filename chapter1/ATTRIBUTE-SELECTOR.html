@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<style>
+	.attribute[title] {background-color:red;}
+	.attribute[title="text1"] {color:blue; font-weight:bold;}
+	.attribute[title~="attr"] {font-size:20px;}	
+	.attribute[title|="align"] {text-align:center;}
+	.attribute[title^="first"] {text-align:right;}
+	.attribute[title$="last"] {text-align:right;}	
+	.attribute[title*="all"] {text-align:right;}
+</style>
+</head>
+<body>
+	<p class="attribute" title="text1">타이틀이 있는 p태그 </p>
+	<p class="attribute" title="text2 attr">타이틀이 있는 p태그 </p>
+	<p class="attribute" title="attr">타이틀이 있는 p태그 </p>
+	<p class="attribute">타이틀이 없는 p태그 </p>
+
+	<br />
+	<br />
+	<!--  .attribute[title|="align"]  -->
+	<p class="attribute" title="align-1">타이틀이 없는 p태그 </p>	
+	<p class="attribute" title="align-2 txt">타이틀이 없는 p태그 </p>
+	<p class="attribute" title="txt align-2">타이틀이 없는 p태그 </p>
+	<p class="attribute" title="align txt">타이틀이 없는 p태그 </p>
+	<!-- // .attribute[title|="align"]  -->
+	
+	<br />
+	<br />
+	<!--  .attribute[title^="align"]  -->
+	<p class="attribute" title="firsttest">타이틀이 없는 p태그</p>
+	<p class="attribute" title="first test">타이틀이 없는 p태그</p>
+	<p class="attribute" title="test first">타이틀이 없는 p태그</p>
+	<!-- // .attribute[title^="align"]  -->
+	<br />
+	<br />
+	<!--  .attribute[title$="align"]  -->
+	<p class="attribute" title="testlast">타이틀이 없는 p태그</p>
+	<p class="attribute" title="last test">타이틀이 없는 p태그</p>
+	<p class="attribute" title="test last">타이틀이 없는 p태그</p>
+	<!-- // .attribute[title$="align"]  -->
+	<br />
+	<br />
+	<!--  .attribute[title*="align"]  -->
+	<p class="attribute" title="testall">타이틀이 없는 p태그</p>
+	<p class="attribute" title="all test">타이틀이 없는 p태그</p>
+	<p class="attribute" title="test all">타이틀이 없는 p태그</p>
+	<!-- // .attribute[title*="align"]  -->
+
+
+
+</body>
+</html>
