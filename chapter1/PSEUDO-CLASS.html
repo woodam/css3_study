@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<style>
+	.link:link {background-color:red;}
+	
+	.hover:hover {background-color:red;}
+
+	.visited:visited {background-color:red;}
+
+	.active:active {background-color:red;}
+
+	.focus:focus {background-color:red;}
+
+	.first-letter:first-letter {font-size:200%; color:red; text-transform:uppercase;}
+
+	.first-line:first-line {font-size:200%; color:red; text-transform:uppercase;}
+
+	.first-child > li:first-child {background-color:red;}
+
+	.before:before {content:"짠짠짠 -";}
+
+	.after:after {content:"-짠짠짠"}
+
+	p:lang(la) {background:red;}
+
+</style>
+</head>
+<body>
+	<!-- :link-->
+	<a href="#" class="link">가상클래스 :link 를 건 a태그</a>
+	<a href="#">가상클래스 :link 를 걸지않은 a태그</a>
+	<br />
+	<br />	
+	<!-- :hover -->
+	<a href="#" class="hover">가상클래스 :hover 를 건 a태그</a>
+	<br />
+	<br />
+	<!-- :visited -->
+	<a href="http://www.naver.com" class="visited">가상클래스 :visited 방문</a>
+	<a href="http://exc3399.dothome.co.kr" class="visited">가상클래스 :visited 방문</a>
+	<a href="http:www.dddddd.co.kr" class="visited">가상클래스 :visited 방문</a>
+	<br />
+	<br />
+	<!-- :active -->
+	<a href="#" class="active">가상클래스 :active 활동적</a>
+	<br />
+	<br />
+	<!-- :focus -->
+	<a href="#" class="focus">가상클래스 :focus </a>
+	<br />
+	<br />
+	<!-- :first-letter -->
+	<p class="first-letter">
+		first-letter 텍스트입니다
+	</p>
+	<!-- :first-line-->
+	<p class="first-line">
+		first-line 첫번째 줄입니다.<br />
+		first-line 두번째 줄입니다.
+	</p>
+	<br />
+	<br />
+
+	<p><b>Note:</b> For :before to work in IE8, a DOCTYPE must be declared.</p>
+	<ul class="first-child">
+		<li>ul에 첫번째 자식입니다</li>
+		<li>ul에 두번째 자식입니다</li>
+		<li>ul에 세번째 자식입니다</li>
+		<li>ul에 네번째 자식입니다</li>
+	</ul>
+	<br />
+	<br />
+	<!-- :before -->
+	<p class="before">이글씨앞에 들어옵니다</p>
+	<br />
+	<br />
+	<p class="after">이글씨뒤에 들어옵니다</p>
+	<br />
+	<br />
+	<!-- :lang(language) -->
+	<p lang="la">lang안에 la라는 속성값을 가진 애만 백그라운드바꾼다</p>
+	<p lang="las">lang안에 la라가 아닌건 백그라운드가 안바뀐다</p>
+</body>
+</html>
