@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<style type="text/css">
+	#selector > div {background-color:red;}
+	#selector > p ~ p {border:1px solid red;}
+	#selector > p + div {text-align:center;}
+	#selector > p + p {text-align:center;} /*이렇게 쓸경우는 되지않는다*/
+
+	ul > li + li {border:1px solid red;}
+	
+</style>
+</head>
+<body>
+	<div id="selector">
+		<p>p태그입니다</p>
+		<div>div태그입니다</div>
+		<p>p태그입니다</p>
+		<section>section태그입니다</section>
+		<article>article태그입니다</article>
+		<p>p태그입니다</p>
+		<section>section태그입니다</section>
+	</div>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+</body>
+</html>
