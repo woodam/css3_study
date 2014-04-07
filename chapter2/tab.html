@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<style>
+html, body										{width:100%; height:100%; min-height:100%;}
+body, ol, ul, li, dl, dt, dd,  p, div						{margin:0; padding:0;}
+a											{color:#666; border:0; text-decoration:none;}
+ol, ul											{list-style-type:none;}
+li											{border:0; vertical-align:top; line-height:1;}
+.clearfix:after									{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix										{display:inline-block;}
+*html .clearfix									{height:1%;}
+.clearfix										{display:block;}
+
+
+.tabMenu {padding:20px 0 0 0;}
+.tabMenu li{float:left; width:100px; height:50px; border:1px solid red;}
+.tabMenu li a {display:block; width:100%; height:100%;}
+.tabContents {border:1px solid red; width:300px; height:300px; display:none;}
+:target {display:block;}
+
+</style>
+</head>
+<body>
+	<ul class="tabMenu clearfix">
+		<li><a href="#tab1">탭1</a></li>
+		<li><a href="#tab2">탭2</a></li>
+		<li><a href="#tab3">탭3</a></li>
+	</ul>
+
+
+	<div id="tab1" class="tabContents">탭1에대한내용</div>
+	<div id="tab2" class="tabContents">탭2에대한내용</div>
+	<div id="tab3" class="tabContents">탭3에대한내용</div>
+</body>
+</html>
