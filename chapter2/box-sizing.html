@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<style>
+	.box1 {
+		-moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box;
+		width:200px; height:200px; border:30px solid red;
+	}/*initial 디폴트??*/ /*inherit 상속?? LESS 땜에 PASS */
+
+	.box2 {
+		-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;
+		width:200px; height:200px; border:30px solid red;
+	}
+
+	.radius {
+		width:100px; height:90px; text-align:center; padding:10px 0 0 0;
+		border:2px solid red; -moz-border-radius:100px; -webkit-border-radius:100px; border-radius:100px; 
+	}
+
+	.shadow {
+		width:300px; height:50px; border:1px solid red;
+		-moz-box-shadow: 10px 10px 5px red; -webkit-shadow: 10px 10px 5px red;
+		box-shadow: 10px 10px 5px red;
+	}
+
+</style>
+</head>
+<body>
+	<div class="box1">
+	1번박스<br /> content-box
+	</div>
+	<br /><br />
+	<div class="box2">
+	2번박스<br /> border-box
+	</div>
+	<br /><br />
+	<div class="radius">
+		border <br />radius
+	</div>
+	<br /><br />
+	<div class="shadow">
+		box-shadow
+	</div>
+
+</body>
+</html>
