@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<style type="text/css">
+	.transition{width:100px; height:100px; background:red; transition:width 1s; -webkit-transition:width 1s;}/*property, duration, delay순서*/
+	.transition:hover{width:300px;}
+
+
+	.transition2 {width:100px; height:100px; background:red;
+		-webkit-transition-property:width; 
+		-webkit-transition-duration:2s;
+		-webkit-transition-delay:2s;
+	}
+
+	.transition2:hover{width:300px;}
+
+
+</style>
+</head>
+<body>
+	<div class="transition">바로동작</div>
+	<br />
+	<br />
+	<div class="transition2">2초 딜레이</div>
+</body>
+</html>

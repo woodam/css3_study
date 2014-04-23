@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<style type="text/css">
+.animation { width:100px; height:100px; background:red; position:relative; animation:mymove 1s inherit; -webkit-animation:mymove 1s inherit;} 
+/*
+	animation-direction값
+	normal 한번만재생되는듯
+	reverse 반대로 에니메이션
+	alternate 
+	alternate-reverse
+	initial
+	inherit
+
+*/
+
+@keyframes mymove{
+	from {left:0px;}
+	to {left:200px;}
+}
+@-webkit-keyframes mymove{
+	from {left:0px;}
+	to {left:200px;}
+}
+
+/*
+@keyframes mymove{
+	0%{left:0px; top:0px;}
+	25%{left:200px; top:0px;}
+	50%{left:200px; top:200px;}
+	75%{left:0px; top:200px;}
+	100%{left:0px; top:0px;}
+}
+
+
+@-webkit-keyframes mymove{
+	0%{left:0px; top:0px;}
+	25%{left:200px; top:0px;}
+	50%{left:200px; top:200px;}
+	75%{left:0px; top:200px;}
+	100%{left:0px; top:0px;}
+}*/
+
+</style>
+</head>
+<body>
+	<div class="animation">바로동작</div>
+</body>
+</html>
